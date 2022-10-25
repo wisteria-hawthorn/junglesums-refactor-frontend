@@ -1,11 +1,23 @@
+
 import React, { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+
+
+/*
+TODO: we aren't sure what this does? Some of it seems important? Maybe also for a separate user profile page?
+EITHER:
+- get rid of it
+- use to create a user profile page
+- use to fix the name / child name issue on the main page
+- use for the parent dashboard / child dashboard
+*/
+
 const Profile = () => {
   const { user, isAuthenticated, getAccessTokenSilently } = useAuth0();
   const [userMetadata, setUserMetadata] = useState(null);
   useEffect(() => {
     const getUserMetadata = async () => {
-      const domain = "dev-5vyznydl.us.auth0.com";
+      const domain = "dev-z4rofpvosozxnlqw.eu.auth0.com";
       try {
         const accessToken = await getAccessTokenSilently({
           audience: `https://${domain}/api/v2/`,
@@ -42,8 +54,6 @@ const Profile = () => {
   );
 };
 export default Profile;
-
-
 
 
 
