@@ -2,11 +2,11 @@ import React from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { useNavigate } from 'react-router-dom';
 
-
+// 7, 8, 9 -- Auth0 credentials that change depending on which account is used for authentication
 const Auth0ProviderWithHistory = ({ children }) => {
-  const domain = "dev-5vyznydl.us.auth0.com";
-  const clientId = "zjdgtnQIhKnNygR8WwINXBbEXkSM7Tsz";
-  const audience = "https://dev-5vyznydl.us.auth0.com/api/v2/";
+  const domain = "dev-z4rofpvosozxnlqw.eu.auth0.com";
+  const clientId = "PHJyq1ZQr3br3yCPfPpBrPErmVwJBmbg";
+  const audience = "https://dev-z4rofpvosozxnlqw.eu.auth0.com/api/v2/";
 
   const navigate = useNavigate();
 
