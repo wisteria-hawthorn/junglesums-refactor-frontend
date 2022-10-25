@@ -5,9 +5,9 @@
 /.pnp
 .pnp.js
 
+# just in case
 ../node_modules
 ./node_modules
-
 frontend-final-project/node_modules
 frontend-final-project/.env
 
