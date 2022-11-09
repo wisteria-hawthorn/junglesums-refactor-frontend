@@ -17,7 +17,7 @@ const Profile = () => {
   const [userMetadata, setUserMetadata] = useState(null);
   useEffect(() => {
     const getUserMetadata = async () => {
-      const domain = "dev-z4rofpvosozxnlqw.eu.auth0.com";
+      const domain = process.env.REACT_APP_AUTH0_DOMAIN;
       try {
         const accessToken = await getAccessTokenSilently({
           audience: `https://${domain}/api/v2/`,

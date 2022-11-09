@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 // 7, 8, 9 -- Auth0 credentials that change depending on which account is used for authentication
 const Auth0ProviderWithHistory = ({ children }) => {
-  const domain = "dev-z4rofpvosozxnlqw.eu.auth0.com";
-  const clientId = "PHJyq1ZQr3br3yCPfPpBrPErmVwJBmbg";
-  const audience = "https://dev-z4rofpvosozxnlqw.eu.auth0.com/api/v2/";
+  const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+  const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+  const audience = process.env.REACT_APP_AUTH0_CLIENT_AUDIENCE;
 
   const navigate = useNavigate();
 
