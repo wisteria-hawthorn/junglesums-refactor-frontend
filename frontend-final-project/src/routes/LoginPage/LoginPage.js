@@ -45,8 +45,11 @@ function parentPassword() {
     <>
       <div id="container">
         <LogoutButton />
+        <div>
+          <h1 className={"app-heading " + "animate__animated " + "animate__fadeInUp " + "animate__slow"}>Welcome...</h1>
+        </div>
         <section className = 'child-text-button-container'>
-          <h2 className = {"child-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>
+          <h2 className = "child-welcome ">
           Welcome, {child}!
           <br/> 
           Ready for another adventure? 
@@ -58,7 +61,7 @@ function parentPassword() {
           </Link>
         </section>
         <section className = 'parent-text-button-container'>
-          <h2 className = {"parent-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>
+          <h2 className = "parent-welcome">
             Welcome, {parent}! 
             <br/> 
             Log in to see {child}'s achievements.
